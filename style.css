@@ -1,0 +1,45 @@
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.container .container-center .heading {
+  color: blue;
+  text-align: center;
+}
+
+.container .container-center {
+  max-width: 1000px;
+  margin: auto;
+  background-color: aqua;
+  text-align: center;
+}
+
+.table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* footer */
+
+.footer {
+  background-color: blanchedalmond;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: red;
+  border-top-right-radius: 1rem;
+}
+
+.footer .footer-header {
+  font-weight: bold;
+  font-size: large;
+}
+
+.footer .link {
+  color: blueviolet;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+}
