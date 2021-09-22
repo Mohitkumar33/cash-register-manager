@@ -17,15 +17,20 @@
           Enter the bill amount and cash given by the customer and know minimum
           number of notes to return.
         </h2>
-        <h3>Bill amount:</h3>
-        <input type="text" />
-        <h3>Cash Given:</h3>
-        <input type="text" />
+        <label for="bill-amount">Bill Amount:</label>
+        <!-- <h3>Bill amount:</h3> -->
+        <input id="bill-amount" type="text" />
+        <!-- <h3>Cash Given:</h3> -->
+        <label for="cash-given">Cash Given:</label>
+        <input id="cash-given" type="text" />
         <div>
           <button>check</button>
         </div>
-        <h2>Return Change</h2>
+        <!-- <h2>Return Change</h2> -->
         <table class="table" border="1">
+          <caption>
+            Return Change
+          </caption>
           <thead>
             <th>Note</th>
             <th>2000</th>
@@ -69,5 +74,6 @@
         <p>Website Made with love with the help of NEOG camp</p>
       </footer>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
