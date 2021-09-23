@@ -21,9 +21,29 @@ body {
   text-align: center;
 }
 
+.label-input {
+  font-size: larger;
+}
+
 label {
   display: block;
+  padding: 1rem;
 }
+
+input {
+  padding: 0.5rem;
+}
+
+#check-button {
+  padding: 0.5rem;
+  margin: 1rem;
+  font-size: large;
+  border-radius: 0.5rem;
+}
+
+/* #output-box {
+  background-color: rgb(111, 211, 107);
+} */
 
 .table {
   margin-left: auto;

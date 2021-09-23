@@ -19,18 +19,25 @@ function showMessage(msg) {
   message.innerText = msg;
 }
 
+function backgroundColor(color) {
+  message.style.backgroundColor = color;
+}
+
 function calculateNotes() {
   message.style.display = "none";
   if (billAmount.value > 0) {
-    if (billAmount.value < cashGiven.value) {
+    if (billAmount.value <= cashGiven.value) {
       const amountToBeReturned = cashGiven.value - billAmount.value;
+      backgroundColor("#6FD36B");
       showMessage("success you have to give: " + amountToBeReturned + " ₹");
 
       calculateBill(amountToBeReturned);
     } else {
+      backgroundColor("#CF3F3F");
       showMessage("Please give the cash greater than the bill amount");
     }
   } else {
+    backgroundColor("#CF3F3F");
     showMessage("Please enter a positive value");
   }
 }
