@@ -23,8 +23,9 @@ function calculateNotes() {
   message.style.display = "none";
   if (billAmount.value > 0) {
     if (billAmount.value < cashGiven.value) {
-      showMessage("success");
       const amountToBeReturned = cashGiven.value - billAmount.value;
+      showMessage("success you have to give: " + amountToBeReturned + " ₹");
+
       calculateBill(amountToBeReturned);
     } else {
       showMessage("Please give the cash greater than the bill amount");
