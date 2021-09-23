@@ -25,8 +25,8 @@ function backgroundColor(color) {
 
 function calculateNotes() {
   message.style.display = "none";
-  if (billAmount.value > 0) {
-    if (billAmount.value <= cashGiven.value) {
+  if (parseInt(billAmount.value) > 0) {
+    if (parseInt(billAmount.value) <= parseInt(cashGiven.value)) {
       const amountToBeReturned = cashGiven.value - billAmount.value;
       backgroundColor("#6FD36B");
       showMessage("success you have to give: " + amountToBeReturned + " ₹");
